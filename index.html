@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Achinta Kumar Dutta — DevOps Engineer with 5+ years of experience building automated, observable cloud platforms on Azure." />
+  <meta name="author" content="Achinta Kumar Dutta" />
+  <meta name="theme-color" content="#070b14" />
+  <title>Achinta Kumar Dutta — DevOps Engineer</title>
+
+  <!-- Fonts (falls back to system fonts when offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Decorative background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-text">achinta<em>.dev</em></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-cta">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">
+            <span class="pulse" aria-hidden="true"></span>
+            DevOps Engineer · Azure Cloud
+          </p>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient">Achinta</span>.
+            <br />
+            I build the road from
+            <span class="gradient">commit</span> to
+            <span class="gradient">cloud</span>.
+          </h1>
+
+          <p class="hero-sub reveal">
+            A DevOps engineer with <strong>5+ years of experience</strong> designing,
+            automating and operating cloud platforms on Azure — with Terraform,
+            Kubernetes, Helm and pipelines that ship calmly.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#experience">
+              View my experience
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#contact">Let's talk</a>
+          </div>
+
+          <dl class="stats reveal">
+            <div class="stat">
+              <dt>Experience</dt>
+              <dd><span class="count" data-count="5">5</span>+ yrs</dd>
+            </div>
+            <div class="stat">
+              <dt>Core tools</dt>
+              <dd><span class="count" data-count="8">8</span></dd>
+            </div>
+            <div class="stat">
+              <dt>Based in</dt>
+              <dd>India</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- Terminal visual -->
+        <div class="hero-visual reveal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red" aria-hidden="true"></span>
+              <span class="dot yellow" aria-hidden="true"></span>
+              <span class="dot green" aria-hidden="true"></span>
+              <span class="terminal-title">azure@prod — zsh</span>
+            </div>
+            <pre class="terminal-body"><code><span class="c-prompt">$</span> terraform plan -out=tfplan
+<span class="c-dim">Refreshing state...</span>
+<span class="c-ok">Plan: 12 to add, 0 to change, 0 to destroy.</span>
+
+<span class="c-prompt">$</span> kubectl get pods -n prod
+<span class="c-dim">NAME                     READY   STATUS</span>
+web-7d9f8c6b4-2xk9p      1/1     <span class="c-ok">Running</span>
+api-5c2b7f9d1-m4n8q      1/1     <span class="c-ok">Running</span>
+worker-6f4d2a8c7-t9w2z   1/1     <span class="c-ok">Running</span>
+
+<span class="c-prompt">$</span> az pipelines run --name deploy-prod
+<span class="c-ok">✓ Pipeline #4821 succeeded</span> <span class="c-dim">· 3m 12s</span>
+<span class="c-cursor" aria-hidden="true">▊</span></code></pre>
+          </div>
+          <div class="terminal-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">01 — About</p>
+          <h2>Infrastructure that <span class="gradient">ships itself</span>.</h2>
+        </div>
+
+        <div class="about-grid">
+          <figure class="card about-art reveal">
+            <img
+              src="assets/dev-desk.svg"
+              alt="Illustration of a developer with headphones sitting at a desk, typing code on a monitor"
+              width="640"
+              height="520"
+              loading="lazy"
+            />
+            <figcaption>Building in the quiet hours · India</figcaption>
+          </figure>
+
+          <div class="about-copy reveal">
+            <p class="about-lead">
+              I'm <strong>Achinta</strong>, a DevOps engineer from India who
+              genuinely enjoys the boring parts of software: predictable
+              deploys, clean infrastructure, and alerts that never wake anyone
+              at 2 a.m.
+            </p>
+            <p>
+              I started my career at TCS in 2021, moved from production support
+              into cloud automation, and now build Azure platforms and delivery
+              pipelines at PwC. Most of my day is Terraform, Kubernetes and
+              pipelines — the rest is making sure Datadog agrees with me.
+            </p>
+            <ul class="about-facts">
+              <li>5+ years across cloud, automation and operations</li>
+              <li>Azure-first mindset, Terraform for everything else</li>
+              <li>Graduated in 2021 · based in India</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="card feature reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </span>
+            <h3>Cloud, as code</h3>
+            <p>Azure landing zones, networking and workloads provisioned with reusable Terraform modules — no snowflakes, no surprises.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+            </span>
+            <h3>Pipelines that don't page you</h3>
+            <p>CI/CD in Azure DevOps and GitHub Actions with quality gates, OIDC auth and safe, repeatable releases.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </span>
+            <h3>Containers at scale</h3>
+            <p>Kubernetes workloads packaged with Helm, deployed with rolling, canary and blue-green strategies.</p>
+          </article>
+
+          <article class="card feature reveal">
+            <span class="icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </span>
+            <h3>Observability first</h3>
+            <p>Datadog dashboards, monitors and SLOs so the team learns about issues from telemetry — not from users.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">02 — Toolbox</p>
+          <h2>The stack I <span class="gradient">work with</span>.</h2>
+          <p class="section-lead">
+            Eight tools, one goal: move code to production quickly, safely and
+            with full visibility.
+          </p>
+        </div>
+
+        <div class="skill-grid">
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon azure" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h3>Azure Cloud</h3>
+            <p>Landing zones, networking, identity and managed services.</p>
+            <ul class="chips">
+              <li>VNet</li><li>AKS</li><li>Key Vault</li><li>Monitor</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <span class="skill-level">Expert</span>
+            </div>
+            <h3>Terraform</h3>
+            <p>Modular, repeatable infrastructure across environments and teams.</p>
+            <ul class="chips">
+              <li>Modules</li><li>State</li><li>Workspaces</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Azure DevOps</h3>
+            <p>Repos, Boards and multi-stage pipelines with approval gates.</p>
+            <ul class="chips">
+              <li>Pipelines</li><li>Repos</li><li>Artifacts</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>GitHub Actions</h3>
+            <p>Reusable workflows, matrix builds and OIDC-based deployments.</p>
+            <ul class="chips">
+              <li>Reusable workflows</li><li>OIDC</li><li>Matrix</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.2"/><path d="M12 3v5.8M12 15.2V21M3.9 7.5l5 2.9M15.1 13.6l5 2.9M3.9 16.5l5-2.9M15.1 10.4l5-2.9"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Kubernetes</h3>
+            <p>AKS operations, autoscaling, ingress, RBAC and zero-downtime rollouts.</p>
+            <ul class="chips">
+              <li>AKS</li><li>Ingress</li><li>HPA</li><li>RBAC</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Docker</h3>
+            <p>Small, secure images with multi-stage builds and smart layer caching.</p>
+            <ul class="chips">
+              <li>Multi-stage</li><li>Hardening</li><li>ACR</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"/><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Helm</h3>
+            <p>Chart authoring and templated releases with per-environment values.</p>
+            <ul class="chips">
+              <li>Charts</li><li>Templating</li><li>Values</li>
+            </ul>
+          </article>
+
+          <article class="card skill reveal">
+            <div class="skill-top">
+              <span class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </span>
+              <span class="skill-level">Advanced</span>
+            </div>
+            <h3>Datadog</h3>
+            <p>Metrics, logs, APM and SLOs wired into a single source of truth.</p>
+            <ul class="chips">
+              <li>Dashboards</li><li>Monitors</li><li>APM</li><li>SLOs</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="kicker">03 — Experience</p>
+          <h2>Where I've <span class="gradient">done the work</span>.</h2>
+          <p class="section-lead">
+            Five years across a global IT services leader and a Big Four
+            consulting firm — from production support to platform engineering.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card job">
+              <div class="job-head">
+                <div>
+                  <h3>DevOps Engineer</h3>
+                  <p class="company">PwC</p>
+                </div>
+                <span class="period">Feb 2026 — Present</span>
+              </div>
+              <p class="job-summary">
+                Building and running cloud platforms for client delivery teams,
+                with automation and observability at the centre.
+              </p>
+              <ul class="job-points">
+                <li>Design and maintain CI/CD pipelines in Azure DevOps and GitHub Actions, reducing manual release effort.</li>
+                <li>Provision Azure infrastructure with reusable Terraform modules across dev, staging and production.</li>
+                <li>Deploy and operate containerised workloads on Kubernetes using Helm across environments.</li>
+                <li>Build Datadog dashboards, monitors and SLOs to surface issues before they reach users.</li>
+              </ul>
+              <ul class="chips">
+                <li>Azure</li><li>Terraform</li><li>Kubernetes</li><li>Helm</li><li>Datadog</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card job">
+              <div class="job-head">
+                <div>
+                  <h3>DevOps / Cloud Engineer</h3>
+                  <p class="company">Tata Consultancy Services (TCS)</p>
+                </div>
+                <span class="period">2021 — 2025 · 4.2 yrs</span>
+              </div>
+              <p class="job-summary">
+                Started on production support and grew into cloud automation —
+                owning pipelines, infrastructure and releases for enterprise
+                applications.
+              </p>
+              <ul class="job-points">
+                <li>Automated Azure resource provisioning with Terraform, replacing manual setup with versioned code.</li>
+                <li>Containerised applications with Docker and deployed them to Kubernetes clusters.</li>
+                <li>Built and supported Azure DevOps pipelines used by multiple product teams.</li>
+                <li>Handled production incidents, root-cause analysis and runbook improvements.</li>
+              </ul>
+              <ul class="chips">
+                <li>Azure</li><li>Docker</li><li>Kubernetes</li><li>Azure DevOps</li><li>Terraform</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="edu card reveal">
+          <span class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          </span>
+          <div>
+            <h3>Bachelor's Degree</h3>
+            <p>Graduated in 2021 · India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="kicker">04 — Contact</p>
+            <h2>Let's build something <span class="gradient">reliable</span>.</h2>
+            <p>
+              I'm open to DevOps, platform engineering and cloud roles — remote or
+              hybrid. If you have a pipeline that needs love, I'd like to hear
+              about it.
+            </p>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="mailto:achintadutta1997@gmail.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+                Email me
+              </a>
+              <a class="btn btn-ghost" href="https://www.linkedin.com/in/achinta-kumar-dutta/" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/Achinta1997" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                GitHub
+              </a>
+            </div>
+            <p class="location">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              India · Open to remote
+            </p>
+            <p class="email-line">
+              <a href="mailto:achintadutta1997@gmail.com">achintadutta1997@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="contact-aside" aria-hidden="true">
+            <div class="mini-terminal">
+              <p><span class="c-prompt">$</span> whoami</p>
+              <p class="c-dim">devops-engineer</p>
+              <p><span class="c-prompt">$</span> cat availability.txt</p>
+              <p class="c-ok">open to opportunities</p>
+              <p><span class="c-prompt">$</span> echo $TIMEZONE</p>
+              <p class="c-dim">IST (UTC+5:30)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Achinta Kumar Dutta — Built from scratch with HTML &amp; CSS.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Achinta1997" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/achinta-kumar-dutta/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:achintadutta1997@gmail.com">Email</a>
+        <a href="#top" class="to-top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
